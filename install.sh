@@ -5,7 +5,7 @@
 set -eu
 umask 022
 
-DOTFILES_REPOSITORY=""
+DOTFILES_REPOSITORY="https://github.com/erickhunter/dotfiles.git"
 DOTFILES_FOLDER="$HOME/.files"
 
 echo "Starting setup"
