@@ -4,17 +4,17 @@ case "$(uname)" in
 	Darwin)
 
 # Ask for computer name
-echo Please enter the desired hostname [j5nesh]:
+echo Please enter the desired hostname :
 read -r HOSTVAR
 
 # Rename the computer
-sudo scutil --set ComputerName "${HOSTVAR:-j5nesh}"
-sudo scutil --set HostName "${HOSTVAR:-j5nesh}"
-sudo scutil --set LocalHostName "${HOSTVAR:-j5nesh}"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "${HOSTVAR:-j5nesh}"
+sudo scutil --set ComputerName "${HOSTVAR}"
+sudo scutil --set HostName "${HOSTVAR}"
+sudo scutil --set LocalHostName "${HOSTVAR}"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "${HOSTVAR}"
 
 # Add message to lock screen
-sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "If found, contact me:\erick.hunter@erick.ee"
+sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "If found, contact me: \nlost@erick.ee"
 
 sudo pmset -a standbydelay 1500																								  # Set standby delay
 
@@ -35,8 +35,8 @@ defaults write com.apple.menuextra.battery ShowPercent -string "YES"						# Show
 
 # defaults write com.apple.dock autohide -bool true																# Hide dock
 # defaults write com.apple.dock orientation right																	# Move dock on the right side
-defaults write com.apple.dock static-only -bool true														# Show only running apps
-defaults write com.apple.dock show-process-indicators -bool false								# Remove indicators
+# defaults write com.apple.dock static-only -bool true														# Show only running apps
+# defaults write com.apple.dock show-process-indicators -bool false								# Remove indicators
 defaults write com.apple.dock show-recents -bool false													# Remove recent apps from dock
 defaults write com.apple.dock tilesize -int 36																	# Set new dock icon size
 
@@ -61,7 +61,7 @@ defaults write com.apple.Safari AutoFillPasswords -bool false										# Disable
 defaults write com.apple.Safari AutoFillCreditCardData -bool false							# Disable AutoFill CC data
 defaults write com.apple.Safari AutoFillMiscellaneousForms -bool false					# Disable other AutoFill items
 defaults write com.apple.Safari ShowFullURLInSmartSearchField -bool true				# Show full url in Safari
-defaults write com.apple.Safari AutoOpenSafeDownloads -bool false								# Do not ipen safe files
+defaults write com.apple.Safari AutoOpenSafeDownloads -bool false								# Do not open safe files
 defaults write com.apple.Safari IncludeInternalDebugMenu -bool true							# Enable Safari debug menu
 defaults write com.apple.Safari IncludeDevelopMenu -bool true										# Include developer menu
 defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true	# Include developer extras
