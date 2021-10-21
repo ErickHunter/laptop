@@ -44,13 +44,17 @@ if [ ! -d "$DOTFILES_FOLDER" ]; then
 fi
 
 # Folders and symlinks
+echo "setting symlinks"
 eval "$(curl -fsSL https://raw.githubusercontent.com/erickhunter/laptop/master/symlinks.sh)"
+echo "setting folders"
 eval "$(curl -fsSL https://raw.githubusercontent.com/erickhunter/laptop/master/folders.sh)"
 
 case "$(uname)" in
 	Darwin)
 
+		echo "setting apps"
 		eval "$(curl -fsSL https://raw.githubusercontent.com/erickhunter/laptop/master/macos-apps.sh)"
+		echo "setting macos settings"
 		eval "$(curl -fsSL https://raw.githubusercontent.com/erickhunter/laptop/master/macos-settings.sh)"
 
 	;;
