@@ -29,6 +29,7 @@ if [ ! -d "$DOTFILES_FOLDER" ]; then
 		echo "ERROR: Location $DOTFILES_FOLDER is not writable" 1>&2
 		exit 1
 	else
+		echo "Getting dotfiles"
 		mkdir -p "$DOTFILES_FOLDER" && cd "$DOTFILES_FOLDER"
 		$_git init -q
 		$_git config core.autocrlf "false"
