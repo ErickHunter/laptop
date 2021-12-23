@@ -79,17 +79,17 @@ cask 'steam'                      # Video game digital distribution service
 cask '1password'                  # Install 1password7
 # cask 'aldente'                   # Power management
 cask 'alfred'                     # Little helper all around
-cask 'bartender'                  # Menu bar helper
-cask 'gpg-suite'                  # Encryption
-cask 'hazel'                      # Automated organization of files
-cask 'little-snitch'              # Application Firewall, this only doVwnloads the installer, needs additional steps
-cask 'micro-snitch'               # Tracks app attempts to use your microphone or camera
-cask 'numi'                       # Text calculator
-cask 'swish'                      # The missing gesture layer for macOS
-cask 'the-unarchiver'             # Application for unarchiving files
+#cask 'bartender'                  # Menu bar helper
+#cask 'gpg-suite'                  # Encryption
+#cask 'hazel'                      # Automated organization of files
+#cask 'little-snitch'              # Application Firewall, this only doVwnloads the installer, needs additional steps
+#cask 'micro-snitch'               # Tracks app attempts to use your microphone or camera
+#cask 'numi'                       # Text calculator
+#cask 'swish'                      # The missing gesture layer for macOS
+#cask 'the-unarchiver'             # Application for unarchiving files
 # cask 'balenaetcher'               # Writing images to USB and SD cards
 # cask 'keycastr'                   # Screencasting key presses
-cask 'tunnelblick'                # Free and open-source OpenVPN client
+#cask 'tunnelblick'                # Free and open-source OpenVPN client
 cask 'dropbox'                    # Client for the Dropbox cloud storage service
 cask 'gimp'                       # Free and open-source image editor
 
