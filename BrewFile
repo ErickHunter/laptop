@@ -41,9 +41,6 @@ brew 'shellcheck'                 # Static analysis of shell scripts
 # Brew cask repair
 brew 'vitorgalvao/tiny-scripts/cask-repair'
 
-# Other
-# brew 'gopass'                     # Distributed password management
-# brew 'hledger'                    # Financial management
 
 # MacAppStore
 brew 'mas'                        # CLI version of Mac App Store
@@ -54,7 +51,6 @@ cask_args appdir: '/Applications'
 
 # Terminal
 cask 'iterm2'                     # Replacement terminal with shell integration
-# cask 'sekey'                      # Use Touch ID / Secure Enclave for SSH Authentication!
 
 # Browsers
 # cask 'firefox'
@@ -79,19 +75,14 @@ cask 'steam'                      # Video game digital distribution service
 cask '1password'                  # Install 1password7
 # cask 'aldente'                   # Power management
 cask 'alfred'                     # Little helper all around
-#cask 'bartender'                  # Menu bar helper
-#cask 'gpg-suite'                  # Encryption
-#cask 'hazel'                      # Automated organization of files
-#cask 'little-snitch'              # Application Firewall, this only doVwnloads the installer, needs additional steps
-#cask 'micro-snitch'               # Tracks app attempts to use your microphone or camera
-#cask 'numi'                       # Text calculator
-#cask 'swish'                      # The missing gesture layer for macOS
-#cask 'the-unarchiver'             # Application for unarchiving files
 # cask 'balenaetcher'               # Writing images to USB and SD cards
 # cask 'keycastr'                   # Screencasting key presses
 #cask 'tunnelblick'                # Free and open-source OpenVPN client
 cask 'dropbox'                    # Client for the Dropbox cloud storage service
 cask 'gimp'                       # Free and open-source image editor
+cask 'todoist'                    # The to do list to organize work and life
+cask 'google-earth-pro'             # 3D render of earth with various tools
+cask 'parallels'                    # VMs on M1
 
 
 # Developer Tools
@@ -103,7 +94,7 @@ cask 'atom'                       # General IDE
 cask 'pycharm'                    # PyCharm pro
 
 # 3D Printing / Designer
-cask 'freecad'                    # 3D CAD modeler
+cask 'freecad'                    # 3D CAD modeling
 
 ## Fonts
 
@@ -113,9 +104,6 @@ cask 'freecad'                    # 3D CAD modeler
 
 # Utilities
 mas 'DigiDoc4 Client',	id: 1370791134    # Digital signing application for EstEID
-# mas 'HazeOver',		id: 430798174           # Helps to focus on app
-# mas 'Next Meeting',	id: 1017470484        # Display next calendar meeting in menu bar
-# mas 'Daisydisk',	id: 411643860           # See how you use space on your harddrives
 
 # Media
 # mas 'Final Cut Pro',	id: 424389933
