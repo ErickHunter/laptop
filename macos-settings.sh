@@ -38,7 +38,7 @@ defaults write com.apple.menuextra.battery ShowPercent -string "YES"						# Show
 # defaults write com.apple.dock static-only -bool true														# Show only running apps
 # defaults write com.apple.dock show-process-indicators -bool false								# Remove indicators
 defaults write com.apple.dock show-recents -bool false													# Remove recent apps from dock
-defaults write com.apple.dock tilesize -int 36																	# Set new dock icon size
+defaults write com.apple.dock tilesize -int 39																	# Set new dock icon size
 
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true		# No .DS_Store on network shares
 defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true				# ... or USB drives
