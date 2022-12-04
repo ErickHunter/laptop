@@ -72,7 +72,7 @@ cask 'steam'                      # Video game digital distribution service
 cask '1password'                  # Install 1password7
 cask 'alfred'                     # Application launcher and productivity software
 cask 'balenaetcher'               # Writing images to USB and SD cards
-cask 'tunnelblick'                # Free and open-source OpenVPN client
+# cask 'tunnelblick'              # Free and open-source OpenVPN client
 cask 'todoist'                    # The to do list to organize work and life
 # cask 'google-earth-pro'         # 3D render of earth with various tools
 cask 'parallels'                  # Desktop virtualization software
@@ -103,6 +103,7 @@ cask 'freecad'                    # 3D CAD modeling
 
 # Utilities
 mas 'DigiDoc4 Client',	id: 1370791134    # Digital signing application for EstEID
+mas 'wireguard', id: 1451685025    # Fast, modern, and secure VPN tunnel
 
 # Media
 # mas 'Final Cut Pro',	id: 424389933
