@@ -81,9 +81,8 @@ cask 'gimp'                       # Free and open-source image editor
 
 
 # Developer Tools
-cask 'atom'                       # General IDE
 cask 'docker'                     # Docker for Mac
-# cask 'visual-studio-code'       # IDE for some programming work
+cask 'visual-studio-code'         # IDE for some programming work
 # cask 'arduino'                  # Aruduino IDE
 # cask 'pycharm-ce'               # PyCharm community
 cask 'pycharm'                    # PyCharm pro
