@@ -73,7 +73,7 @@ cask 'balenaetcher'               # Writing images to USB and SD cards
 cask 'todoist'                    # The to do list to organize work and life
 # cask 'google-earth-pro'         # 3D render of earth with various tools
 cask 'qgis'                       # Geographic Information System
-cask 'parallels'                  # Desktop virtualization software
+# cask 'parallels'                  # Desktop virtualization software
 cask 'home-assistant'             # App for Home Assistant home automation software
 
 # Photography Tools
