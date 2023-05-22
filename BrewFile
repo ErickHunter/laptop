@@ -102,13 +102,5 @@ cask 'freecad'                    # 3D CAD modeling
 mas 'DigiDoc4 Client',	id: 1370791134    # Digital signing application for EstEID
 mas 'wireguard', id: 1451685025    # Fast, modern, and secure VPN tunnel
 
-# Media
-# mas 'Final Cut Pro',	id: 424389933
-
-# Office Alternatives
-# mas 'Keynote',	id: 409183694
-# mas 'Numbers',	id: 409203825
-# mas 'Pages',		id: 409201541
-
 # Developer Tools
 # mas 'XCode',		id: 497799835
