@@ -72,6 +72,7 @@ cask 'balenaetcher'               # Writing images to USB and SD cards
 # cask 'tunnelblick'              # Free and open-source OpenVPN client
 cask 'todoist'                    # The to do list to organize work and life
 # cask 'google-earth-pro'         # 3D render of earth with various tools
+cask 'qgis'                       # Geographic Information System
 cask 'parallels'                  # Desktop virtualization software
 cask 'home-assistant'             # App for Home Assistant home automation software
 
@@ -82,16 +83,16 @@ cask 'gimp'                       # Free and open-source image editor
 
 # Developer Tools
 cask 'docker'                     # Docker for Mac
-cask 'visual-studio-code'         # IDE for some programming work
+cask 'visual-studio-code'         # Open-source code editor
 # cask 'arduino'                  # Aruduino IDE
 # cask 'pycharm-ce'               # PyCharm community
 cask 'pycharm'                    # PyCharm pro
 
 # 3D Printing / Designer
 cask 'freecad'                    # 3D CAD modeling
+cask 'openscad'                   # Programmable solid 3D CAD modeller
 
 ## Fonts
-
 # no fonts here
 
 
