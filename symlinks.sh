@@ -16,13 +16,6 @@ test -e "${HOME}/.gitignore" || ln -sfn "${HOME}/.files/git/gitignore" "${HOME}/
 test -e "${HOME}/.gitattributes" || ln -sfn "${HOME}/.files/git/gitattributes" "${HOME}/.gitattributes"
 test -e "${HOME}/.gitmessage" || ln -sfn "${HOME}/.files/git/gitmessage" "${HOME}/.gitmessage"
 
-## Ansible
-test -e "${HOME}/.ansible.cfg" || ln -sfn "${HOME}/.files/ansible/ansible.cfg" "${HOME}/.ansible.cfg"
-test -e "${HOME}/.ansible" || ln -sfn "${HOME}/.files/ansible/" "${HOME}/.ansible"
-
-## SSH
-test -e "${HOME}/.ssh" || ln -sfn "${HOME}/.files/ssh/" "${HOME}/.ssh"
-
 ## Tmux
 test -e "${HOME}/.tmux.conf" || ln -sfn "${HOME}/.files/tmux/tmux.conf" "${HOME}/.tmux.conf"
 test -e "${HOME}/.tmux" || ln -sfn "${HOME}/.files/tmux/" "${HOME}/.tmux"
