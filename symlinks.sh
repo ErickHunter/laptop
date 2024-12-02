@@ -7,7 +7,7 @@ test -e "${HOME}/.zshrc" || ln -sfn "${HOME}/.files/zsh/zshrc" "${HOME}/.zshrc"
 test -e "${HOME}/.zsh" || ln -sfn "${HOME}/.files/zsh/" "${HOME}/.zsh"
 
 ## P10k
-test -e "${HOME}/.p10k" || ln -sfn "${HOME}/.files/p10k" "${HOME}/.p10k"
+test -e "${HOME}/.p10k.zsh" || ln -sfn "${HOME}/.files/p10k.zsh" "${HOME}/.p10k.zsh"
 
 ## Vim
 test -e "${HOME}/.vimrc" || ln -sfn "${HOME}/.files/vim/vimrc" "${HOME}/.vimrc"
