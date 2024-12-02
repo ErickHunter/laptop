@@ -26,7 +26,8 @@ defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1			# check for u
 defaults write com.apple.SoftwareUpdate AutomaticDownload -int 1			# Download updated in the background
 
 defaults write com.apple.dock show-recents -bool true					# Remove recent apps from dock
-defaults write com.apple.dock tilesize -int 50																	# Set new dock icon size
+defaults write com.apple.dock tilesize -int 50						# Set new dock icon size
+defaults write com.apple.dock magnification -bool false					# Dock hover agnification 
 
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true		# No .DS_Store on network shares
 defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true		# ... or USB drives
@@ -43,6 +44,12 @@ defaults write com.apple.finder _FXShowPosixPathInTitle -bool true			# Full path
 defaults write com.apple.finder ShowPathbar -bool true					# Show path bar in finder window
 defaults write com.apple.finder ShowStatusBar -bool true				# Show status bar in finder window
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool false		# Don't show harddrives in desktop
+
+
+defaults -currentHost write com.apple.controlcenter BatteryShowPercentage -bool true	# Battery - show percentage
+
+defaults write com.apple.AppleMultitouchTrackpad "FirstClickThreshold" -int "0"		# Track pad light press
+
 
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true		# Disable Photos.app hotplug opening
 
