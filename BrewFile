@@ -17,13 +17,13 @@ brew 'grep'
 brew 'vim'                        # Update to Vim8
 brew 'wget'
 brew 'zsh'                        # Better shell
+brew 'powerlevel10k'              # zsh theme
 
 # Missing Utilities
 brew 'fdupes'                     # Finding duplicate files
 brew 'nmap'                       # Network Mapper
 brew 'p7zip'                      # Unzip weird stuff
-brew 'tmux'                       # Terminal multiplexer
-brew 'tree'                       # Tree view for folder content
+brew 'tree'                       # Tree view for folder content nice to have
 
 # Developer tools
 brew 'git'                        # Git
@@ -34,6 +34,9 @@ brew 'iproute2mac'                # Run "ip addr show" on mac
 brew 'peco'                       # Simplistic interactive filtering tool
 brew 'progress'                   # Show progress for cp, mv, dd, ..
 brew 'shellcheck'                 # Static analysis of shell scripts
+
+# Extras
+brew 'openvpn'                    # OpenVPN client
 
 # Brew cask repair
 brew 'vitorgalvao/tiny-scripts/cask-repair'
@@ -56,25 +59,24 @@ cask 'brave-browser'
 
 # Communications
 cask 'discord'                    # Community and voice Chats
-# cask 'mattermost'               # Team chats
-# cask 'mumble'                   # Voice chat, seasonal usage
 # cask 'signal'                   # Encrypted communications
 cask 'slack'                      # Team chats
 
 # Media
 cask 'steam'                      # Video game digital distribution service
+cask 'focusrite-control'          # Focusrite interface controller
+cask 'vlc'                        # Multimedia player
 
 
 # Utilities
-cask '1password'                  # Install 1password7
-cask 'alfred'                     # Application launcher and productivity software
+cask '1password'                  # Install 1password
 cask 'balenaetcher'               # Writing images to USB and SD cards
+cask 'raspberry-pi-imager'        # Imaging utility to install operating systems to a microSD card
+cask 'microsoft-word'             # Word processor
 # cask 'tunnelblick'              # Free and open-source OpenVPN client
-cask 'todoist'                    # The to do list to organize work and life
 # cask 'google-earth-pro'         # 3D render of earth with various tools
 cask 'qgis'                       # Geographic Information System
-# cask 'parallels'                  # Desktop virtualization software
-cask 'home-assistant'             # App for Home Assistant home automation software
+cask 'utm'                        # Virtual machines UI using QEMU
 
 # Photography Tools
 cask 'darktable'                  # Photography workflow application and raw developer
@@ -86,10 +88,10 @@ cask 'docker'                     # Docker for Mac
 cask 'visual-studio-code'         # Open-source code editor
 # cask 'arduino'                  # Aruduino IDE
 # cask 'pycharm-ce'               # PyCharm community
-cask 'pycharm'                    # PyCharm pro
+# cask 'pycharm'                  # PyCharm pro
 
 # 3D Printing / Designer
-cask 'freecad'                    # 3D CAD modeling
+# cask 'freecad'                  # 3D CAD modeling
 cask 'openscad'                   # Programmable solid 3D CAD modeller
 
 ## Fonts
