@@ -1,9 +1,10 @@
 ## Tap external sources ##
 
 tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/cask-fonts"
-tap "homebrew/core"
+# tap "homebrew/cask" Error: Tapping homebrew/cask is no longer typically necessary.
+# tap "homebrew/core" Tapping homebrew/core is no longer typically necessary.
+# Add --force if you are sure you need it for contributing to Homebrew.
+
 
 ## Homebrew applications ##
 
@@ -39,7 +40,7 @@ brew 'shellcheck'                 # Static analysis of shell scripts
 brew 'openvpn'                    # OpenVPN client
 
 # Brew cask repair
-brew 'vitorgalvao/tiny-scripts/cask-repair'
+# brew 'vitorgalvao/tiny-scripts/cask-repair' # not nessary for me at the moment
 
 
 # MacAppStore
