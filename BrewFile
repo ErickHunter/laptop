@@ -17,8 +17,8 @@ brew 'curl'
 brew 'grep'
 brew 'vim'                        # Update to Vim8
 brew 'wget'
-# brew 'zsh'                        # Better shell / installed in install.sh
-# brew 'powerlevel10k'              # zsh theme / installed in install.sh
+brew 'zsh'                        # Better shell
+brew 'powerlevel10k'              # zsh theme
 
 # Missing Utilities
 brew 'fdupes'                     # Finding duplicate files
