@@ -63,8 +63,8 @@ case "$(uname)" in
 		echo "setting up zsh with oh my zsh"
   		sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
     		echo "setting up Powerlevel10k"
-		git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-		sed -i.bak 's/^ZSH_THEME=".*"/ZSH_THEME="powerlevel10k\/powerlevel10k"/' ~/.zshrc
+      		echo "source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme" >>~/.zshrc
+      		exec zsh
 		echo "setting macos settings"
 		eval "$(curl -fsSL https://raw.githubusercontent.com/erickhunter/laptop/master/macos-settings.sh)"
 
