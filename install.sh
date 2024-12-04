@@ -15,9 +15,12 @@ case "$(uname)" in
 		if [ ! -f "$(command -v brew)" ]; then
 			# Install Homebrew
 			/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-   			/bin/bash -c "$(echo >> /Users/erickhunter/.zprofile)"
-      			/bin/bash -c "$("$(echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/erickhunter/.zprofile)")"
-	 		/bin/bash -c "$(eval '$(/opt/homebrew/bin/brew shellenv)')"
+			# add a new line to .zprofile
+            		echo "" >> "$HOME/.zprofile"
+            		# append Homebrew shell environment to .zprofile
+           		echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> "$HOME/.zprofile"
+            		# evaluate Homebrew shell environment for the current session
+            		eval "$(/opt/homebrew/bin/brew shellenv)"
 		fi
 	;;
 esac
