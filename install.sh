@@ -60,13 +60,13 @@ case "$(uname)" in
 
 		echo "setting apps"
 		eval "$(curl -fsSL https://raw.githubusercontent.com/erickhunter/laptop/master/macos-apps.sh)"
-		echo "setting up zsh with oh my zsh"
+		echo "setting macos settings"
+		eval "$(curl -fsSL https://raw.githubusercontent.com/erickhunter/laptop/master/macos-settings.sh)"
+  		echo "setting up zsh with oh my zsh"
   		sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
     		echo "setting up Powerlevel10k"
       		echo "source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme" >>~/.zshrc
       		exec zsh
-		echo "setting macos settings"
-		eval "$(curl -fsSL https://raw.githubusercontent.com/erickhunter/laptop/master/macos-settings.sh)"
 
 	;;
 esac
