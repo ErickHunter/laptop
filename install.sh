@@ -64,12 +64,6 @@ case "$(uname)" in
 		eval "$(curl -fsSL https://raw.githubusercontent.com/erickhunter/laptop/master/macos-settings.sh)"
   		echo "setting up zsh with oh my zsh"
   		sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-    		echo "setting up Powerlevel10k"
-      		echo "source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme" >>~/.zshrc
-      		exec zsh
 
 	;;
 esac
-
-# Install ViM plugins
-vim +PluginInstall +qall
