@@ -15,6 +15,9 @@ case "$(uname)" in
 		if [ ! -f "$(command -v brew)" ]; then
 			# Install Homebrew
 			/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+   			/bin/bash -c "$(echo >> /Users/erickhunter/.zprofile)"
+      			/bin/bash -c "$(echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/erickhunter/.zprofile)"
+	 		/bin/bash -c "$(eval '$(/opt/homebrew/bin/brew shellenv)')"
 		fi
 	;;
 esac
