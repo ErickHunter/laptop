@@ -1,19 +1,12 @@
-One command to setup fresh Mac installations.
-```sh
+One command to setup fresh Mac installations. 
+```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/erickhunter/laptop/master/install.sh)"
 ```
+After it is done you should see Oh My ZSH. Close the terminal and open iterm.
 
+Then set up P10k
+```git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k```
 
-Your probbly going to see this your first time running, 
-I need to make it add homebrew to path automatically probbly, otherwise when
-the BrewFile comes it can't find the ```brew``` command
+Then open ```~/.zshrc```, find the line that sets ```ZSH_THEME```, and change its value to ```powerlevel10k/powerlevel10k```. Then quit and reopen iterm and follow the instructions.
 
-
-```
-==> Next steps:
-- Run these commands in your terminal to add Homebrew to your PATH:
-    echo >> /Users/erickhunter/.zprofile
-    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/erickhunter/.zprofile
-    eval "$(/opt/homebrew/bin/brew shellenv)"
-- Run brew help to get started
-```
+ If you want to ever change the theme of p10k just run ```p10k configure```.
